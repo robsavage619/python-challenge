@@ -10,7 +10,7 @@ PyBank: the goal was to create a program that runs through the given CSV to dete
   - The greatest increase in profits (date and amount) over the entire period
   - The greatest decrease in losses (date and amount) over the entire period
 
-PyPoll: the goal was to create a program that runs through the a much larger CSV to determine the following information and showcase the effectivenes of Python in relation to Excel:
+PyPoll: the goal was to create a program that runs through the a much larger CSV to determine the following information and showcase the effectiveness of Python in relation to Excel:
 
   - The total number of votes cast
   - A complete list of candidates who received votes
