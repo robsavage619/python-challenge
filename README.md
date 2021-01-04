@@ -1,144 +1,123 @@
-# Python Homework - Py Me Up, Charlie
-
-## Background
-
-Well... you've made it!
-
-It's time to put away the Excel sheet and join the big leagues. Welcome to the world of programming with Python. In this homework assignment, you'll be using the concepts you've learned to complete the **two** Python Challenges, PyBank and PyPoll.
-
-Both of these challenges encompasses a real-world situation where your newfound Python scripting skills can come in handy. These challenges are far from easy so expect some hard work ahead!
-
-### Before You Begin
-
-* Create a new repository for this project called `python-challenge`. **Do not add this homework to an existing repository**.
-
-* Clone the new repository to your computer.
-
-* Inside your local git repository, create a directory for both of the  Python Challenges. Use folder names corresponding to the challenges: **PyBank** and  **PyPoll**.
-
-* Inside of each folder that you just created, add the following:
-
-  * A new file called `main.py`. This will be the main script to run for each analysis.
-  * A "Resources" folder that contains the CSV files you used. Make sure your script has the correct path to the CSV file.
-  * An "analysis" folder that contains your text file that has the results from your analysis.
-
-* Push the above changes to GitHub or GitLab.
-
-## PyBank
+# Python Financial and Election Analysis 
 
 ![Revenue](Images/revenue-per-lead.png)
 
-* In this challenge, you are tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`. (Thankfully, your company has rather lax standards for accounting so the records are simple.)
+---
 
-* Your task is to create a Python script that analyzes the records to calculate each of the following:
+![Visualization](Images/python-gif.gif "Code Walkthrough")
 
-  * The total number of months included in the dataset
+---
 
-  * The net total amount of "Profit/Losses" over the entire period
+## Contact Information
 
-  * The average of the changes in "Profit/Losses" over the entire period
+Rob Savage 
 
-  * The greatest increase in profits (date and amount) over the entire period
+rob.savage@me.com
 
-  * The greatest decrease in losses (date and amount) over the entire period
+[LinkedIn](https://www.linkedin.com/in/robsavage/)
 
-* As an example, your analysis should look similar to the one below:
 
-  ```text
-  Financial Analysis
-  ----------------------------
-  Total Months: 86
-  Total: $38382578
-  Average  Change: $-2315.12
-  Greatest Increase in Profits: Feb-2012 ($1926159)
-  Greatest Decrease in Profits: Sep-2013 ($-2196167)
-  ```
+[Tableau Public](https://public.tableau.com/profile/rob.savage)
 
-* In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+---
 
-## PyPoll
+## Project Description
 
-![Vote Counting](Images/Vote_counting.png)
+The purpose of this project was to use two different data sets in two separate projects to make inferences about the respective data. PyBank's task was to create a Python script to handle the following objectives:
 
-* In this challenge, you are tasked with helping a small, rural town modernize its vote counting process.
+  - The total number of months included in the dataset
 
-* You will be give a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. Your task is to create a Python script that analyzes the votes and calculates each of the following:
 
-  * The total number of votes cast
+  - The net total amount of "Profit/Losses" over the entire period
 
-  * A complete list of candidates who received votes
 
-  * The percentage of votes each candidate won
+  - The average of the changes in "Profit/Losses" over the entire period
 
-  * The total number of votes each candidate won
 
-  * The winner of the election based on popular vote.
+  - The greatest increase in profits (date and amount) over the entire period
 
-* As an example, your analysis should look similar to the one below:
 
-  ```text
-  Election Results
-  -------------------------
-  Total Votes: 3521001
-  -------------------------
-  Khan: 63.000% (2218231)
-  Correy: 20.000% (704200)
-  Li: 14.000% (492940)
-  O'Tooley: 3.000% (105630)
-  -------------------------
-  Winner: Khan
-  -------------------------
-  ```
+  - The greatest decrease in losses (date and amount) over the entire period
 
-* In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-## Hints and Considerations
+For PyPoll the objective was to create a Python script to analyze election data with the following objectives:
 
-* Consider what we've learned so far. To date, we've learned how to import modules like `csv`; to read and write files in various formats; to store contents in variables, lists, and dictionaries; to iterate through basic data structures; and to debug along the way. Using what we've learned, try to break down your tasks into discrete mini-objectives. This will be a _much_ better course of action than spending all your time looking for a solution on Stack Overflow.
+  - The total number of votes cast
 
-* As you will discover, for some of these challenges, the datasets are quite large. This was done purposefully, as it showcases one of the limits of Excel-based analysis. While our first instinct, as data analysts, is often to head straight into Excel, creating scripts in Python can provide us with more robust options for handling "big data".
 
-* Write one script for each dataset provided. Run your script separately to make sure that the code works for its respective dataset.
+  - A complete list of candidates who received votes
 
-* Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. You get what you put in, and the art of programming is extremely unforgiving to moochers. Dig your heels in, burn the night oil, and learn this while you can! These are skills that will pay dividends in your future career.
 
-* Start early, and reach out for help often! Challenge yourself to identify _specific_ questions for your instructors and TAs. Don't resign yourself to simply saying, "I'm totally lost." If you need help, reach out because we're happy to help. But, come prepared and show us what you have done and your thought process.
+  - The percentage of votes each candidate won
 
-* Always commit your work and back it up with GitHub pushes. You don't want to lose hours of your work because you didn't push it to GitHub every half hour or so.
 
-  * **Commit often**.
+  - The total number of votes each candidate won
 
-## Copyright
 
-Trilogy Education Services © 2019. All Rights Reserved.
+  - The winner of the election based on popular vote.
 
-- - -
+---
+
+## Tools Used
+
+1. Python (Data Aggregation)
+
+2. Github (Publishing of Results and Analysis)
+
+3. Atom
+
+4. CSV
+
+5. OS
+
+---
+
+## Steps PyBank
+
+1. Used `Python` to aggregate data from the `budget_data.csv` in the `Resources` folder
+
+ - Created empty lists (`total_months`, `total_proft`, and `monthly_profit_change`) to hold the my data 
+ - Read in the `CSV`, along with the headers
+ - Appended the data to their appropriate lists
+ - Calculated `monthly_profit_change`
+ - Created variables to hold the min and max profit changes
+ - Printed the results
+ - Exported the results to a txt files
+
+---
+
+## Steps PyPoll
+
+1. Used `Python` to aggregate data from the `election_data.csv` in the `Resources` folder
+
+ - Created empty lists (`voter_id`, `county`, `candidates`, `khan`, `correy`, `li`, `otooley`, `khan_votes`, `correy_votes`, `li_votes`, `otooley_votes`, `total_votes`, and `winner`) to hold the my data 
+ - Read in the `CSV`, along with the headers
+ - Appended the data to their appropriate lists
+ - Calculated `total_votes` via `len` of the `voter_id` column
+ - Created `for`loops that matched the candidates last name and appended the data to their respective lists
+ - Calculated vote percentages by running each of the candidates votes against the total votes
+ - Printed the results
+ - Exported the results to a txt files
+
+---
 
 ## Analysis
 
-PyBank/PyPoll Activities
+PyBank - 
 
-The code being deployed in the respective files takes on different responsibilities.
+Total Months: 86
+Total: $38382578
+Average Change: $-2315.12
+Greatest Increase in Profits: Feb-2012 ($1926159)
+Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
-PyBank: the goal was to create a program that runs through the given CSV to determine the following information:
+PyPoll - 
 
-  - The total number of months included in the dataset
-  - The net total amount of "Profit/Losses" over the entire period
-  - The average of the changes in "Profit/Losses" over the entire period
-  - The greatest increase in profits (date and amount) over the entire period
-  - The greatest decrease in losses (date and amount) over the entire period
+Total Votes: 3521001
 
-PyPoll: the goal was to create a program that runs through the a much larger CSV to determine the following information and showcase the effectiveness of Python in relation to Excel:
+Khan: 63.0% 2218231
+Correy: 20.0% 704200
+Li: 14.0% 492940
+O'Tooley: 3.0% 105630
 
-  - The total number of votes cast
-  - A complete list of candidates who received votes
-  - The percentage of votes each candidate won
-  - The total number of votes each candidate won
-  - The winner of the election based on popular vote.
-  
-Each program also produces a respective text file with the results of the code.
-
-Built with: Python 3.6
-
-Author: Rob Savage
-
+Winner: Khan
