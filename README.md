@@ -39,6 +39,7 @@ The purpose of this project was to use two different data sets in two separate p
 
   - The greatest decrease in losses (date and amount) over the entire period
 
+---
 
 For PyPoll the objective was to create a Python script to analyze election data with the following objectives:
 
