@@ -103,7 +103,7 @@ For PyPoll the objective was to create a Python script to analyze election data 
 
 ## Analysis
 
-PyBank - 
+#### PyBank - 
 
 Total Months: 86
 
@@ -116,7 +116,7 @@ Greatest Increase in Profits: Feb-2012 ($1926159)
 Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
 
-PyPoll - 
+#### PyPoll - 
 
 Total Votes: 3521001
 
